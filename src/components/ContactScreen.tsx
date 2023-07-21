@@ -8,10 +8,10 @@ const ContactScreen = () => {
     <div className=" place-items-center grid overflow-hidden bg-white">
       <div className=" m-5">
         <div className="flex flex-row gap-5">
-          <a href="https://github.com/HimitsuTH">
+          <a href="https://github.com/HimitsuTH" target="_black">
             <img src={GithubIcon} alt="github" className=" w-10 h-10" />
           </a>
-          <a href="https://www.linkedin.com/in/chinnawich-ampai-064353284/">
+          <a href="https://www.linkedin.com/in/chinnawich-ampai-064353284/" target="_black">
             <img src={linkedinIcon} alt="linkedin" className=" w-10 h-10" />
           </a>
         </div>
