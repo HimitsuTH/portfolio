@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import GithubIcon from "../assets/code.png";
 import EmailIcon from "../assets/email.png";
 import linkedinIcon from "../assets/linkedin.png";

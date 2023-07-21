@@ -1,13 +1,11 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import data from "../assets/projectItem.json";
 
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 
 const ProjectScreen = () => {
