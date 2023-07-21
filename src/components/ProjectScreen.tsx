@@ -19,7 +19,7 @@ const ProjectScreen = () => {
           {data.map((data) => (
             <Card
               key={data?.id}
-              className=" py-4 sm:hover:scale-125 transition-all w-full sm:w-auto mx-10"
+              className=" py-4  transition-all w-full sm:w-auto mx-10 bg-transparent shadow-none"
             >
               <CardHeader className="grid place-items-center">
                 <img src={data.img} className=" w-36 h-40  overflow-x-hidden" />

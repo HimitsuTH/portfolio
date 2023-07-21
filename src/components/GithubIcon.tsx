@@ -17,7 +17,7 @@ const GithubIcon = () => {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger>
-            <a href="https://github.com/HimitsuTH" target=" _blank">
+            <a href="https://github.com/HimitsuTH/portfolio" target=" _blank">
               <Lottie
                 lottieRef={lottieRef}
                 animationData={GithubIconData}
