@@ -22,7 +22,7 @@ const ProjectScreen = () => {
       </div>
       <div>
         <h1 className="sm:text-4xl text-2xl mb-5 select-none  text-center">Project</h1>
-        <div className=" flex flex-col md:flex-row gap-5 flex-wrap items-center justify-center">
+        <div className=" flex flex-col md:flex-row gap-10 flex-wrap items-center justify-center">
           <Card className=" w-56 p-4 flex justify-center flex-col items-center select-none">
             <CardHeader>
               <CardTitle className=" text-lg">Website</CardTitle>

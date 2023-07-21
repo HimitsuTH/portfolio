@@ -15,7 +15,7 @@ const HomeScreen = () => {
 
   return (
     <div className="top-section h-screen place-items-center grid">
-      <h1 className="sm:text-4xl text-2xl mb-5 select-none ">
+      <h1 className="sm:text-5xl text-2xl mb-5 select-none ">
         Hi, I am Chinnawich Ampai
       </h1>
       <div className=" absolute w-60 h-60 right-20 md:block hidden">
