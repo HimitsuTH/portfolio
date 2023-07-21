@@ -3,6 +3,8 @@ import internetIcon from "../assets/internet.png";
 import apiIcon from "../assets/api.png";
 import atomIcon from "../assets/atom.png";
 
+import iconError from '../assets/iconError.png'
+
 import {
   Card,
   CardContent,
@@ -14,9 +16,12 @@ import {
 
 const ProjectScreen = () => {
   return (
-    <div className="top-section sm:h-screen place-items-center grid p-10 sm:p-0">
+    <div className="top-section md:h-screen place-items-center grid p-10 md:p-0 relative">
+       <div className=" absolute w-72 h-72 left-20 bottom-12 xl:block hidden z-10">
+        <img src={iconError} alt="icon" />
+      </div>
       <div>
-        <h1 className="sm:text-4xl text-2xl mb-5 select-none ">Project</h1>
+        <h1 className="sm:text-4xl text-2xl mb-5 select-none  text-center">Project</h1>
         <div className=" flex flex-col md:flex-row gap-5 flex-wrap items-center justify-center">
           <Card className=" w-56 p-4 flex justify-center flex-col items-center select-none">
             <CardHeader>
