@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Web introduce myself",
-    "img": "../../src/assets/projectImage/Web.png",
+    "img": "./assets/projectImage/Web.png",
     "githubLink": ""
   },
   {
