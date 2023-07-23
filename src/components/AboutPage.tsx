@@ -9,14 +9,37 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const AboutScreen = () => {
+import { Progress } from "@/components/ui/progress";
+
+const AboutPage = () => {
   const [tabActive, setTabActive] = useState<string>("tab1");
+  const [loading, setLoading] = useState<boolean>(true);
+  const [progress, setProgress] = React.useState(13);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setProgress(100);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [loading]);
 
   // console.log(EducationImg);
 
   const handleTabActive = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+    setLoading(true)
     setTabActive(e.currentTarget.id);
+    setProgress(13);
+
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 800);
+
+    return () => clearTimeout(timer);
   };
+
+  // console.log(loading)
 
   return (
     <div
@@ -26,7 +49,7 @@ const AboutScreen = () => {
       <Accordion
         type="single"
         collapsible
-        className="  w-full  lg:hidden block bg-white p-5 rounded-md"
+        className="  w-full  min-[920px]:hidden block bg-white p-5 rounded-md"
       >
         <AccordionItem value="item-1">
           <AccordionTrigger>Introduction</AccordionTrigger>
@@ -50,7 +73,7 @@ const AboutScreen = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      <ul className=" border-b absolute flex-col gap-2 top-1/2 left-2  hidden lg:flex ">
+      <ul className=" border-b absolute flex-col gap-2 top-1/2 left-2  hidden min-[920px]:flex ">
         <li
           id="tab1"
           onClick={(e) => handleTabActive(e)}
@@ -97,17 +120,22 @@ const AboutScreen = () => {
           </p>
         </li>
       </ul>
-      <div className=" hidden lg:block">
-        {tabActive === "tab1" ? (
-          <div></div>
-        ) : tabActive === "tab2" ? (
-          <Education image={EducationImg} />
-        ) : (
-          <div>#</div>
-        )}
-      </div>
+
+      {loading ? (
+        <Progress value={progress} className="w-[60%]" />
+      ) : (
+        <div className=" hidden min-[920px]:block">
+          {tabActive === "tab1" ? (
+            <div></div>
+          ) : tabActive === "tab2" ? (
+            <Education image={EducationImg} />
+          ) : (
+            <div>#</div>
+          )}
+        </div>
+      )}
     </div>
   );
 };
 
-export default AboutScreen;
+export default AboutPage;
