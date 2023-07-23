@@ -2,5 +2,5 @@
     transition: 500ms all;
 }
 .list-item:hover {
-    transform: translateX(20%);
+    transform: translateX(10%);
 }

@@ -85,7 +85,7 @@ const AboutPage = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      <ul className=" border-b absolute flex-col gap-2 top-1/2 left-2  hidden min-[920px]:flex ">
+      <ul className=" border-b absolute flex-row gap-5 top-10 left-10  hidden min-[920px]:flex ">
         <li
           id="tab1"
           onClick={(e) => handleTabActive(e)}
