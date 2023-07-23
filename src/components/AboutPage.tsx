@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import EducationImg from "../assets/educationImg.png";
 import Education from "./About/Education";
+import Introduction from "./About/Introduction";
 
 import {
   Accordion,
@@ -130,7 +131,7 @@ const AboutPage = () => {
       ) : (
         <div className=" hidden min-[920px]:block">
           {tabActive === "tab1" ? (
-            <div></div>
+            <Introduction/>
           ) : tabActive === "tab2" ? (
             <Education image={EducationImg} />
           ) : (
