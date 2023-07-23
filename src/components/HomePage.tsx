@@ -10,7 +10,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-const HomeScreen = () => {
+const HomePage = () => {
   const lottieRef = React.useRef<LottieRefCurrentProps>(null);
 
   return (
@@ -45,4 +45,4 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default HomePage;

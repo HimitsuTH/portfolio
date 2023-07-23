@@ -19,12 +19,20 @@ const AboutPage = () => {
   React.useEffect(() => {
     const timer = setTimeout(() => {
       setProgress(100);
-    }, 500);
-
+    }, 300);
+    handleLoading();
     return () => clearTimeout(timer);
   }, [loading]);
 
   // console.log(EducationImg);
+
+  const handleLoading = () => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 600);
+
+    return () => clearTimeout(timer);
+  }
 
   const handleTabActive = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
     setLoading(true)
@@ -32,14 +40,10 @@ const AboutPage = () => {
     setProgress(13);
 
 
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 800);
-
-    return () => clearTimeout(timer);
+    
   };
 
-  // console.log(loading)
+  console.log(loading)
 
   return (
     <div

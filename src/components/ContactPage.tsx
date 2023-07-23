@@ -3,7 +3,7 @@ import GithubIcon from "../assets/code.png";
 
 import linkedinIcon from "../assets/linkedin.png";
 
-const ContactScreen = () => {
+const ContactPage = () => {
   return (
     <div className=" place-items-center grid overflow-hidden bg-white">
       <div className=" m-5">
@@ -20,4 +20,4 @@ const ContactScreen = () => {
   );
 };
 
-export default ContactScreen;
+export default ContactPage;

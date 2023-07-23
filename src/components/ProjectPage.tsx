@@ -15,7 +15,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 
-const ProjectScreen = () => {
+const ProjectPage = () => {
   return (
     <div className="top-section md:h-screen place-items-center grid p-10 md:p-0 relative">
       <div className=" absolute w-72 h-72 left-4 bottom-3 md:block hidden z-10">
@@ -118,4 +118,4 @@ const ProjectScreen = () => {
   );
 };
 
-export default ProjectScreen;
+export default ProjectPage;
