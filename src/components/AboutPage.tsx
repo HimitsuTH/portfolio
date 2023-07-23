@@ -33,18 +33,15 @@ const AboutPage = () => {
     }, 600);
 
     return () => clearTimeout(timer);
-  }
-
-  const handleTabActive = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
-    setLoading(true)
-    setTabActive(e.currentTarget.id);
-    setProgress(13);
-
-
-    
   };
 
-  console.log(loading)
+  const handleTabActive = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
+    setLoading(true);
+    setTabActive(e.currentTarget.id);
+    setProgress(13);
+  };
+
+  console.log(loading);
 
   return (
     <div
@@ -59,7 +56,17 @@ const AboutPage = () => {
         <AccordionItem value="item-1">
           <AccordionTrigger>Introduction</AccordionTrigger>
           <AccordionContent>
-            Hi, I'm Chinnawich from Thai-nichi institute of technology 4 year.
+            <p>
+              Hi, I'm Chinnawich Ampai from Thai-nichi institute of technology
+              4th year. <br />
+              Looking to be an intern for web development.
+            </p>
+            <br />
+            <strong>Hobbies</strong>
+            <ul>
+              <li>- Coding</li>
+              <li>- Listen music</li>
+            </ul>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
@@ -131,7 +138,7 @@ const AboutPage = () => {
       ) : (
         <div className=" hidden min-[920px]:block">
           {tabActive === "tab1" ? (
-            <Introduction/>
+            <Introduction />
           ) : tabActive === "tab2" ? (
             <Education image={EducationImg} />
           ) : (
