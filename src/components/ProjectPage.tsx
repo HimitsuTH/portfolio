@@ -17,7 +17,7 @@ import {
 
 const ProjectPage = () => {
   return (
-    <div className="top-section md:h-screen place-items-center grid p-10 md:p-0 relative">
+    <div className="top-section md:h-screen place-items-center grid p-10 md:p-0 relative" id="project">
       <div className="bgImage"></div>
       <div className=" absolute w-72 h-72 left-4 bottom-3 lg:block hidden z-10">
         <img src={iconError} alt="icon" />
