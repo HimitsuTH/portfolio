@@ -52,14 +52,14 @@ const AboutPage = () => {
       <Accordion
         type="single"
         collapsible
-        className="  w-full  min-[920px]:hidden block bg-white p-5 rounded-md z-10"
+        className="  w-full  min-[920px]:hidden block bg-white p-5 rounded-md z-30"
       >
         <AccordionItem value="item-1">
           <AccordionTrigger>Introduction</AccordionTrigger>
           <AccordionContent>
             <p>
               My name is Chinnawich Ampai. Currently, studying in the 4th year
-              from Thai-Nichi Institute of technology. I'm looking for an
+              from Thai-Nichi Institute of technology. <br/>I'm looking for an
               internship in web development.
             </p>
             <br />
@@ -89,7 +89,7 @@ const AboutPage = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      <ul className=" border-b absolute flex-row gap-5 top-10 left-10  hidden min-[920px]:flex ">
+      <ul className=" border-b absolute flex-row gap-5 top-10 left-10  hidden min-[920px]:flex z-30">
         <li
           id="tab1"
           onClick={(e) => handleTabActive(e)}
@@ -140,7 +140,7 @@ const AboutPage = () => {
       {loading ? (
         <Progress value={progress} className="w-[60%]" />
       ) : (
-        <div className=" hidden min-[920px]:block">
+        <div className=" hidden min-[920px]:block z-30">
           {tabActive === "tab1" ? (
             <Introduction />
           ) : tabActive === "tab2" ? (
