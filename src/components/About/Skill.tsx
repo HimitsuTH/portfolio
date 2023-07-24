@@ -14,39 +14,39 @@ const Skill = () => {
           <img
             src={htmlIcon}
             alt="html"
-            className=" w-16 h-16 hover:scale-90 transition-transform"
+            className=" w-16 h-14 hover:scale-90 transition-transform"
           />
           {/* <p>HTML</p> */}
         </div>
         <img
           src={cssIcon}
           alt="css"
-          className=" w-16 h-16 hover:scale-90 transition-transform"
+          className=" w-16 h-14 hover:scale-90 transition-transform"
         />
         <img
           src={jsIcon}
           alt="js"
-          className=" w-16 h-16 hover:scale-90 transition-transform"
+          className=" w-16 h-14 hover:scale-90 transition-transform"
         />
         <img
           src={nodeIcon}
           alt="node"
-          className=" w-16 h-16 hover:scale-90 transition-transform"
+          className=" w-16 h-14 hover:scale-90 transition-transform"
         />
         <img
           src={atomIcon}
           alt="atom"
-          className=" w-16 h-16 hover:scale-90 transition-transform"
+          className=" w-16 h-14 hover:scale-90 transition-transform"
         />
         <img
           src={tailwindIcon}
           alt="tailwind"
-          className=" w-16 h-16 hover:scale-90 transition-transform"
+          className=" w-16 h-14 hover:scale-90 transition-transform"
         />
         <img
           src={sassIcon}
           alt="sass"
-          className=" w-16 h-16 hover:scale-90 transition-transform"
+          className=" w-16 h-14 hover:scale-90 transition-transform"
         />
       </div>
     </div>
