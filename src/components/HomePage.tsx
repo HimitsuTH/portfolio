@@ -24,7 +24,7 @@ const HomePage = () => {
             Hi, I am Chinnawich Ampai
           </h1>
           <h2 className="sm:text-2xl text-lg text-brown">
-            Thai-nichi institute of technology
+            Thai-Nichi institute of technology
           </h2>
         </div>
         <div className="flex flex-row gap-5 z-10">

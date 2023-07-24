@@ -45,7 +45,7 @@ const Navbar = () => {
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                     tabActive === "tab1"
                       ? " bg-brown text-white "
-                      : "text-gray-900  hover:bg-gray-100 md:hover:text-brown hover:text-brown md:hover:bg-gray-100"
+                      : "text-gray-900  hover:bg-gray-100 md:hover:text-brown hover:text-brown md:hover:bg-white"
                   } md:p-0    `}
                 aria-current="page"
               >
@@ -58,7 +58,7 @@ const Navbar = () => {
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                     tabActive === "tab2"
                       ? " bg-brown text-white "
-                      : "text-gray-900  hover:bg-gray-100 md:hover:text-brown hover:text-brown md:hover:bg-gray-100"
+                      : "text-gray-900  hover:bg-gray-100 md:hover:text-brown hover:text-brown md:hover:bg-white"
                   } md:p-0    `}
               >
                 About
@@ -70,7 +70,7 @@ const Navbar = () => {
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                   tabActive === "tab3"
                     ? " bg-brown text-white "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown hover:text-brown md:hover:bg-gray-100"
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown hover:text-brown md:hover:bg-white"
                 } md:p-0    `}
               >
                 Project

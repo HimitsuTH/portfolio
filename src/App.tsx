@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className=" bg-white">
+      <div className=" bg-gray-100">
         <Navbar/>
         <GithubIcon />
         <HomePage />
