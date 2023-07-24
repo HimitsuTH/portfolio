@@ -59,9 +59,8 @@ const AboutPage = () => {
           <AccordionContent>
             <p>
               My name is Chinnawich Ampai. Currently, studying in the 4th year
-              from 
-              Thai-Nichi Institute of technology. I'm looking for an internship
-              in web development.
+              from Thai-Nichi Institute of technology. I'm looking for an
+              internship in web development.
             </p>
             <br />
             <strong>Hobbies</strong>
@@ -97,9 +96,9 @@ const AboutPage = () => {
           className="-mb-px mr-1  cursor-pointer list-item"
         >
           <p
-            className={`bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold   ${
+            className={`bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold ${
               tabActive == "tab1"
-                ? "text-white bg-brown"
+                ? "text-white bg-brown "
                 : " text-slate-500 hover:text-slate-800"
             }`}
           >
@@ -112,7 +111,7 @@ const AboutPage = () => {
           onClick={(e) => handleTabActive(e)}
         >
           <p
-            className={`bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold   ${
+            className={`bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold ${
               tabActive == "tab2"
                 ? "text-white bg-brown "
                 : " text-slate-500 hover:text-slate-800"
@@ -127,7 +126,7 @@ const AboutPage = () => {
           onClick={(e) => handleTabActive(e)}
         >
           <p
-            className={`bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold   ${
+            className={`bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold ${
               tabActive == "tab3"
                 ? "text-white bg-brown "
                 : " text-slate-500 hover:text-slate-800"
