@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import EducationImg from "../assets/educationImg.png";
 import Education from "./About/Education";
 import Introduction from "./About/Introduction";
+import Skill from "./About/Skill";
 
 import {
   Accordion,
@@ -45,21 +46,21 @@ const AboutPage = () => {
 
   return (
     <div
-      className="h-screen  p-10 grid place-items-center relative "
+      className="h-screen  p-10 grid place-items-center relative  "
       id="about"
     >
       <Accordion
         type="single"
         collapsible
-        className="  w-full  min-[920px]:hidden block bg-white p-5 rounded-md"
+        className="  w-full  min-[920px]:hidden block bg-white p-5 rounded-md z-10"
       >
         <AccordionItem value="item-1">
           <AccordionTrigger>Introduction</AccordionTrigger>
           <AccordionContent>
             <p>
-              Hi, I'm Chinnawich Ampai from Thai-nichi institute of technology
-              4th year. <br />
-              Looking to be an intern for web development.
+              My name is Chinnawich Ampai. Currently, studying in the 4th year
+              from Thai-Nichi Institute of technology. I'm looking for an
+              internship in web development.
             </p>
             <br />
             <strong>Hobbies</strong>
@@ -81,7 +82,10 @@ const AboutPage = () => {
         <AccordionItem value="item-3">
           <AccordionTrigger>Skill</AccordionTrigger>
           <AccordionContent>
-            <p>HTML, CSS, Java Script, Java, C#, React js, Node js</p>
+            <p>
+              HTML, CSS, Java Script, React js, Node js,
+              <br /> SASS, Tailwind CSS, Java, C#,
+            </p>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
@@ -142,7 +146,7 @@ const AboutPage = () => {
           ) : tabActive === "tab2" ? (
             <Education image={EducationImg} />
           ) : (
-            <div>#</div>
+            <Skill />
           )}
         </div>
       )}

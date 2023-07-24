@@ -3,7 +3,7 @@ import GithubIcon from "./components/GithubIcon";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import ProjectPage from "./components/ProjectPage";
-import ContactPage from "./components/ContactPage";
+// import ContactPage from "./components/ContactPage";
 
 import "./App.css";
 
@@ -15,7 +15,7 @@ function App() {
         <HomePage />
         <AboutPage />
         <ProjectPage/>
-        <ContactPage/>
+        {/* <ContactPage/> */}
       </div>
     </>
   );

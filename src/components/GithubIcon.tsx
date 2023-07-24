@@ -13,7 +13,7 @@ const GithubIcon = () => {
   const lottieRef = React.useRef<LottieRefCurrentProps>(null);
 
   return (
-    <div className=" fixed top-4 right-5 z-10">
+    <div className=" fixed top-4 right-5 z-40 ">
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger>
@@ -21,7 +21,7 @@ const GithubIcon = () => {
               <Lottie
                 lottieRef={lottieRef}
                 animationData={GithubIconData}
-                className=" h-8 w-8 hover:scale-125 transition-all"
+                className=" h-12 w-12 hover:scale-125 transition-all bg-white  rounded-lg p-2 shadow-lg"
               />
             </a>
           </TooltipTrigger>

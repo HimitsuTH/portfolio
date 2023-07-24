@@ -18,15 +18,16 @@ import {
 const ProjectPage = () => {
   return (
     <div className="top-section md:h-screen place-items-center grid p-10 md:p-0 relative">
-      <div className=" absolute w-72 h-72 left-4 bottom-3 md:block hidden z-10">
+      <div className="bgImage"></div>
+      <div className=" absolute w-72 h-72 left-4 bottom-3 lg:block hidden z-10">
         <img src={iconError} alt="icon" />
       </div>
       <div className=" z-20">
-        <h1 className="sm:text-4xl text-2xl mb-5 select-none  text-center">
+        <h1 className="sm:text-4xl text-3xl mb-5 select-none  text-center">
           Project
         </h1>
-        <div className=" flex flex-col md:flex-row gap-10 flex-wrap items-center justify-center">
-          <Card className=" w-56 p-4 flex justify-center flex-col items-center select-none">
+        <div className=" grid grid-cols-1 gap-10  min-[720px]:grid-cols-2 xl:grid-flow-col">
+          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none">
             <CardHeader>
               <CardTitle className=" text-lg">Website</CardTitle>
             </CardHeader>
@@ -51,7 +52,7 @@ const ProjectPage = () => {
               </a>
             </CardFooter>
           </Card>
-          <Card className=" w-56 p-4 flex justify-center flex-col items-center select-none">
+          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none">
             <CardHeader>
               <CardTitle className=" text-lg">RestFulApi</CardTitle>
             </CardHeader>
@@ -76,7 +77,7 @@ const ProjectPage = () => {
               </a>
             </CardFooter>
           </Card>
-          <Card className=" w-56 p-4 flex justify-center flex-col items-center select-none">
+          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none">
             <CardHeader>
               <CardTitle className=" text-lg">React Native</CardTitle>
             </CardHeader>
@@ -94,7 +95,7 @@ const ProjectPage = () => {
               </a>
             </CardFooter>
           </Card>
-          <Card className=" w-56 p-4 flex justify-center flex-col items-center select-none">
+          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none">
             <CardHeader>
               <CardTitle className=" text-lg">Frontend Mentor</CardTitle>
             </CardHeader>
