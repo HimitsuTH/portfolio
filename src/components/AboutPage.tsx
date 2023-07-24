@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import EducationImg from "../assets/educationImg.png";
+
 import Education from "./About/Education";
 import Introduction from "./About/Introduction";
 import Skill from "./About/Skill";
@@ -57,7 +57,7 @@ const AboutPage = () => {
         <AccordionItem value="item-1">
           <AccordionTrigger>Introduction</AccordionTrigger>
           <AccordionContent>
-            <p>
+            <p className=" w-10/12">
               My name is Chinnawich Ampai. Currently, studying in the 4th year
               from Thai-Nichi Institute of technology. I'm looking for an
               internship in web development.
@@ -74,8 +74,18 @@ const AboutPage = () => {
           <AccordionTrigger>Education</AccordionTrigger>
           <AccordionContent>
             <ul>
-              <li>- 2018-2020 Tepleela School</li>
-              <li>- 2020-now Thai-nichi institute of technology</li>
+              <li className=" font-semibold">- 2018-2020 Tepleela School</li>
+              <p className=" ml-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                excepturi ducimus ab possimus animi totam nesciunt corporis
+                fugiat voluptatum reprehenderit.
+              </p>
+              <li className=" font-semibold">- 2020-now Thai-nichi institute of technology</li>
+              <p className=" ml-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                excepturi ducimus ab possimus animi totam nesciunt corporis
+                fugiat voluptatum reprehenderit.
+              </p>
             </ul>
           </AccordionContent>
         </AccordionItem>
@@ -144,7 +154,7 @@ const AboutPage = () => {
           {tabActive === "tab1" ? (
             <Introduction />
           ) : tabActive === "tab2" ? (
-            <Education image={EducationImg} />
+            <Education />
           ) : (
             <Skill />
           )}
