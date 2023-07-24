@@ -98,7 +98,7 @@ const AboutPage = () => {
           <p
             className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold ${
               tabActive == "tab1"
-                ? "text-white  "
+                ? "text-white  bg-brown"
                 : " text-slate-500 hover:text-slate-800"
             }`}
           >
