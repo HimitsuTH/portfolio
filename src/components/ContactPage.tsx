@@ -1,7 +1,5 @@
 // import React from "react";
-import GithubIcon from "../assets/code.png";
 
-import linkedinIcon from "../assets/linkedin.png";
 
 const ContactPage = () => {
   return (
