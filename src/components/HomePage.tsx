@@ -35,7 +35,7 @@ const HomePage = () => {
               <a
                 href="https://github.com/HimitsuTH"
                 target="_black"
-                className="dark:bg-beige p-2 dark:rounded-xl"
+                className="dark:bg-white p-2 dark:rounded-xl"
               >
                 <img
                   src={GithubIcon}
@@ -46,7 +46,7 @@ const HomePage = () => {
               <a
                 href="https://www.linkedin.com/in/chinnawich-ampai-064353284/"
                 target="_black"
-                className="dark:bg-beige p-2 dark:rounded-xl"
+                className="dark:bg-white p-2 dark:rounded-xl"
               >
                 <img
                   src={linkedinIcon}
@@ -64,7 +64,7 @@ const HomePage = () => {
       </div>
 
       {/* Animation Icon */}
-      <div className=" absolute bottom-2 dark:bg-white rounded-full">
+      <div className=" absolute -bottom-2 ">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>

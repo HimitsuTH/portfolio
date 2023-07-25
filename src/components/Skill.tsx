@@ -14,39 +14,39 @@ const Skill = () => {
           <img
             src={htmlIcon}
             alt="html"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-beige  dark:rounded-xl"
+            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
           />
           {/* <p>HTML</p> */}
        
         <img
           src={cssIcon}
           alt="css"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-beige  dark:rounded-xl"
+            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
         />
         <img
           src={jsIcon}
           alt="js"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-beige  dark:rounded-xl"
+            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
         />
         <img
           src={nodeIcon}
           alt="node"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-beige  dark:rounded-xl"
+            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
         />
         <img
           src={atomIcon}
           alt="atom"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-beige  dark:rounded-xl"
+            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
         />
         <img
           src={tailwindIcon}
           alt="tailwind"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-beige  dark:rounded-xl"
+            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
         />
         <img
           src={sassIcon}
           alt="sass"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-beige  dark:rounded-xl"
+            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
         />
       </div>
  
