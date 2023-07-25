@@ -98,10 +98,10 @@ const AboutPage = () => {
           className="-mb-px mr-1  cursor-pointer list-item"
         >
           <p
-            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2 dark:bg-beige2 dark:hover:bg-white hover:bg-white dark:border-beige ${
+            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2 dark:bg-beige dark:hover:bg-beige2 dark:hover:text-brown2 hover:bg-white dark:border-beige ${
               tabActive == "tab1"
                 ? " text-white bg-brown2 dark:bg-white dark:text-brown2"
-                : " text-brown2  dark:text-white "
+                : " text-brown2  dark:text-brown2 "
             }`}
           >
             Introduction
@@ -113,10 +113,10 @@ const AboutPage = () => {
           onClick={(e) => handleTabActive(e)}
         >
           <p
-            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2 dark:bg-beige2 dark:hover:bg-white hover:bg-white dark:border-beige ${
+            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2 dark:bg-beige dark:hover:bg-beige2 dark:hover:text-brown2 hover:bg-white dark:border-beige ${
               tabActive == "tab2"
                 ? " text-white bg-brown2 dark:bg-white dark:text-brown2"
-                : " text-brown2  dark:text-white "
+                : " text-brown2  dark:text-brown2 "
             }`}
           >
             Education

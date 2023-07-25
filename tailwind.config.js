@@ -75,7 +75,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        Project: "url('/src/assets/trianglify-lowres.png')",
+        Project: "url('/src/assets/bgDark.png')",
       },
     },
   },

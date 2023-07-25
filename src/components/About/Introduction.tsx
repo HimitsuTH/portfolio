@@ -7,8 +7,8 @@ const Introduction = () => {
   const lottieRef = React.useRef<LottieRefCurrentProps>(null);
   return (
     <div className="flex items-center flex-row  transition-all justify-center gap-20">
-      <div className=" w-1/2">
-        <p>
+      <div className=" w-1/4">
+        <p className=" text-xl">
          <strong className=" text-2xl"> My name is Chinnawich Ampai.</strong> <br/>Currently, studying in the 4th year from
           Thai-Nichi Institute of technology. I'm looking for an internship in
           web development.

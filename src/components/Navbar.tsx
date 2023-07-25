@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Switch } from "@/components/ui/switch";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
@@ -7,6 +8,29 @@ const Navbar = () => {
   const handleTabActive = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
     setTabActive(e.currentTarget.id);
   };
+
+  const [theme, setTheme] = useState<string>(
+    String(localStorage.getItem("theme")) || "light"
+  );
+
+  // console.log(theme)
+
+  useEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = (e: boolean) => {
+    e ? setTheme("dark") : setTheme("light");
+  };
+  localStorage.setItem("theme", theme);
 
   // console.log(tabActive);
 
@@ -17,9 +41,9 @@ const Navbar = () => {
           onClick={() => setToggle((toggle) => !toggle)}
           data-collapse-toggle="navbar-default"
           type="button"
-          className={`inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden ${
-            toggle ? "bg-gray-100" : "hover:bg-gray-100"
-          } focus:outline-none focus:ring-2 focus:ring-gray-200 `}
+          className={`inline-flex items-center p-2 w-10 h-10 justify-center text-sm  text-brown2 dark:text-beige rounded-lg md:hidden ${
+            toggle ? "bg-gray-100 dark:text-brown2" : "hover:bg-gray-100 dark:hover:text-brown2"
+          } focus:outline-none focus:ring-2 focus:ring-gray-200 focus:text-brown2 `}
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -44,8 +68,8 @@ const Navbar = () => {
                 href="#"
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                   tabActive === "tab1"
-                    ? " bg-brown2 text-white dark:bg-beige dark:md:text-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige"
+                    ? " bg-brown2 text-white dark:bg-beige dark:text-brown2 "
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige dark:hover:text-brown2"
                 } md:p-0    `}
                 aria-current="page"
               >
@@ -57,8 +81,8 @@ const Navbar = () => {
                 href="#about"
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                   tabActive === "tab2"
-                    ? " bg-brown2 text-white dark:bg-beige dark:md:text-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige"
+                    ? " bg-brown2 text-white dark:bg-beige dark:text-brown2 "
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige dark:hover:text-brown2"
                 } md:p-0    `}
               >
                 About
@@ -69,12 +93,20 @@ const Navbar = () => {
                 href="#project"
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                   tabActive === "tab3"
-                    ? " bg-brown2 text-white dark:bg-beige dark:md:text-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige"
+                    ? " bg-brown2 text-white dark:bg-beige dark:text-brown2 "
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige dark:hover:text-brown2"
                 } md:p-0    `}
               >
                 Project
               </a>
+            </li>
+            <li className=" flex items-center justify-center">
+              <Switch
+                id="airplane-mode"
+                className="  mt-2 md:my-4 shadow-md"
+                checked={theme == "dark" ? true : false}
+                onCheckedChange={(e) => handleThemeSwitch(e)}
+              />
             </li>
           </ul>
         </div>
