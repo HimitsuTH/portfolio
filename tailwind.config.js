@@ -17,7 +17,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        "brown": "#3F2305",
+        brown: "#C38154",
+        brown2: "#884A39",
+        beige: "#F9E0BB",
+        beige2: "#FFC26F",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -70,6 +73,9 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        Project: "url('/src/assets/trianglify-lowres.png')",
       },
     },
   },

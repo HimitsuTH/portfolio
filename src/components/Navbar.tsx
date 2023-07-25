@@ -8,10 +8,10 @@ const Navbar = () => {
     setTabActive(e.currentTarget.id);
   };
 
-  console.log(tabActive);
+  // console.log(tabActive);
 
   return (
-    <nav className=" bg-transparent border-gray-200 dark:bg-gray-900  z-50 fixed top-5 right-5">
+    <nav className=" bg-transparent border-gray-200   z-50 fixed top-5 right-5">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
         <button
           onClick={() => setToggle((toggle) => !toggle)}
@@ -43,10 +43,10 @@ const Navbar = () => {
               <a
                 href="#"
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
-                    tabActive === "tab1"
-                      ? " bg-brown text-white "
-                      : "text-gray-900  hover:bg-gray-100 md:hover:text-brown hover:text-brown md:hover:bg-white"
-                  } md:p-0    `}
+                  tabActive === "tab1"
+                    ? " bg-brown2 text-white dark:bg-beige dark:md:text-brown2 "
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige"
+                } md:p-0    `}
                 aria-current="page"
               >
                 Home
@@ -56,10 +56,10 @@ const Navbar = () => {
               <a
                 href="#about"
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
-                    tabActive === "tab2"
-                      ? " bg-brown text-white "
-                      : "text-gray-900  hover:bg-gray-100 md:hover:text-brown hover:text-brown md:hover:bg-white"
-                  } md:p-0    `}
+                  tabActive === "tab2"
+                    ? " bg-brown2 text-white dark:bg-beige dark:md:text-brown2 "
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige"
+                } md:p-0    `}
               >
                 About
               </a>
@@ -69,8 +69,8 @@ const Navbar = () => {
                 href="#project"
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                   tabActive === "tab3"
-                    ? " bg-brown text-white "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown hover:text-brown md:hover:bg-white"
+                    ? " bg-brown2 text-white dark:bg-beige dark:md:text-brown2 "
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige"
                 } md:p-0    `}
               >
                 Project

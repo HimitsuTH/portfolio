@@ -5,46 +5,50 @@
   transform: translateX(10%);
 }
 
-.bgImage {
-  background: url("./assets/test.jpg") no-repeat center;
+.shape {
+  border-radius: 53% 47% 72% 28% / 46% 56% 44% 54%   ;
+}
+
+/* .bgImage {
+  background: url("./assets/trianglify-lowres.png") no-repeat center;
   background-size: cover;
   object-fit: cover;
 
   width: 100%;
   height: 100vh;
   position: absolute;
-}
+} */
 
-.bgImage::before {
+/* .bgImage::before {
   --tw-bg-opacity: 1;
 
   content: "";
   position: absolute;
   background: linear-gradient(
     180deg,
-    rgb(243 244 246  / var(--tw-bg-opacity)) 10%,
+    rgb(136 74 57 / var(--tw-bg-opacity)) 10%,
     transparent 80%
   );
   width: 100%;
   height: 100%;
   top: 0;
   z-index: 0;
-}
-.bgImage::after {
+} */
+/* .bgImage::after {
   --tw-bg-opacity: 1;
 
   content: "";
   position: absolute;
   background: linear-gradient(
     0deg,
-    rgb(243 244 246  / var(--tw-bg-opacity)) 10%,
+    rgb(249 224 187 / var(--tw-bg-opacity)) 10%,
     transparent 90%
   );
   width: 100%;
   height: 100%;
   top: 0;
   z-index: 0;
-}
+} */
 
 .timeline {
   max-width: 800px;

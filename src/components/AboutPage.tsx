@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import Education from "./About/Education";
 import Introduction from "./About/Introduction";
-import Skill from "./About/Skill";
 
 import {
   Accordion,
@@ -42,7 +41,7 @@ const AboutPage = () => {
     setProgress(13);
   };
 
-  console.log(loading);
+  // console.log(loading);
 
   return (
     <div
@@ -52,12 +51,12 @@ const AboutPage = () => {
       <Accordion
         type="single"
         collapsible
-        className="  w-full  min-[920px]:hidden block bg-white p-5 rounded-md z-30"
+        className="  w-full  min-[920px]:hidden block bg-white p-5 rounded-md z-30 "
       >
-        <AccordionItem value="item-1">
+        <AccordionItem value="item-1" className=" dark:text-brown2">
           <AccordionTrigger>Introduction</AccordionTrigger>
           <AccordionContent>
-            <p className=" w-10/12">
+            <p className=" w-10/12 ">
               My name is Chinnawich Ampai. Currently, studying in the 4th year
               from Thai-Nichi Institute of technology. I'm looking for an
               internship in web development.
@@ -70,7 +69,7 @@ const AboutPage = () => {
             </ul>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-2">
+        <AccordionItem value="item-2" className=" dark:text-brown2">
           <AccordionTrigger>Education</AccordionTrigger>
           <AccordionContent>
             <ul>
@@ -80,7 +79,9 @@ const AboutPage = () => {
                 excepturi ducimus ab possimus animi totam nesciunt corporis
                 fugiat voluptatum reprehenderit.
               </p>
-              <li className=" font-semibold">- 2020-now Thai-nichi institute of technology</li>
+              <li className=" font-semibold">
+                - 2020-now Thai-nichi institute of technology
+              </li>
               <p className=" ml-2">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
                 excepturi ducimus ab possimus animi totam nesciunt corporis
@@ -89,27 +90,18 @@ const AboutPage = () => {
             </ul>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-3">
-          <AccordionTrigger>Skill</AccordionTrigger>
-          <AccordionContent>
-            <p>
-              HTML, CSS, Java Script, React js, Node js,
-              <br /> SASS, Tailwind CSS, Java, C#,
-            </p>
-          </AccordionContent>
-        </AccordionItem>
       </Accordion>
-      <ul className=" border-b absolute flex-row gap-5 top-10 left-10  hidden min-[920px]:flex z-30">
+      <ul className=" border-b absolute flex-row gap-5 top-10 left-10  hidden min-[920px]:flex z-30 border-brown2 dark:border-beige">
         <li
           id="tab1"
           onClick={(e) => handleTabActive(e)}
           className="-mb-px mr-1  cursor-pointer list-item"
         >
           <p
-            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold ${
+            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2 dark:bg-beige2 dark:hover:bg-white hover:bg-white dark:border-beige ${
               tabActive == "tab1"
-                ? "text-white  bg-brown"
-                : " text-slate-500 hover:text-slate-800"
+                ? " text-white bg-brown2 dark:bg-white dark:text-brown2"
+                : " text-brown2  dark:text-white "
             }`}
           >
             Introduction
@@ -121,28 +113,13 @@ const AboutPage = () => {
           onClick={(e) => handleTabActive(e)}
         >
           <p
-            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold ${
+            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2 dark:bg-beige2 dark:hover:bg-white hover:bg-white dark:border-beige ${
               tabActive == "tab2"
-                ? "text-white bg-brown "
-                : " text-slate-500 hover:text-slate-800"
+                ? " text-white bg-brown2 dark:bg-white dark:text-brown2"
+                : " text-brown2  dark:text-white "
             }`}
           >
             Education
-          </p>
-        </li>
-        <li
-          className="mr-1 cursor-pointer list-item"
-          id="tab3"
-          onClick={(e) => handleTabActive(e)}
-        >
-          <p
-            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold ${
-              tabActive == "tab3"
-                ? "text-white bg-brown "
-                : " text-slate-500 hover:text-slate-800"
-            }`}
-          >
-            Skill
           </p>
         </li>
       </ul>
@@ -150,14 +127,8 @@ const AboutPage = () => {
       {loading ? (
         <Progress value={progress} className="w-[60%]" />
       ) : (
-        <div className=" hidden min-[920px]:block z-30">
-          {tabActive === "tab1" ? (
-            <Introduction />
-          ) : tabActive === "tab2" ? (
-            <Education />
-          ) : (
-            <Skill />
-          )}
+        <div className=" hidden min-[920px]:block z-20">
+          {tabActive == "tab1" ? <Introduction /> : <Education />}
         </div>
       )}
     </div>
