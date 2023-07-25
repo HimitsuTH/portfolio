@@ -69,7 +69,7 @@ const Navbar = () => {
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                   tabActive === "tab1"
                     ? " bg-brown2 text-white dark:bg-beige dark:text-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige dark:hover:text-brown2"
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-black dark:hover:text-brown2"
                 } md:p-0    `}
                 aria-current="page"
               >
@@ -82,7 +82,7 @@ const Navbar = () => {
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                   tabActive === "tab2"
                     ? " bg-brown2 text-white dark:bg-beige dark:text-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige dark:hover:text-brown2"
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-black dark:hover:text-brown2"
                 } md:p-0    `}
               >
                 About
@@ -94,7 +94,7 @@ const Navbar = () => {
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 ${
                   tabActive === "tab3"
                     ? " bg-brown2 text-white dark:bg-beige dark:text-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-beige dark:hover:text-brown2"
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-black dark:hover:text-brown2"
                 } md:p-0    `}
               >
                 Project
