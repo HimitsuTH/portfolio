@@ -14,39 +14,39 @@ const Skill = () => {
           <img
             src={htmlIcon}
             alt="html"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
+            className=" w-14 h-14 p-2 md:p-1 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl md:h-10 md:w-10"
           />
           {/* <p>HTML</p> */}
        
         <img
           src={cssIcon}
           alt="css"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
+            className=" w-14 h-14 p-2 md:p-1 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl md:h-10 md:w-10"
         />
         <img
           src={jsIcon}
           alt="js"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
+            className=" w-14 h-14 p-2 md:p-1 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl md:h-10 md:w-10"
         />
         <img
           src={nodeIcon}
           alt="node"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
+            className=" w-14 h-14 p-2 md:p-1 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl md:h-10 md:w-10"
         />
         <img
           src={atomIcon}
           alt="atom"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
+            className=" w-14 h-14 p-2 md:p-1 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl md:h-10 md:w-10"
         />
         <img
           src={tailwindIcon}
           alt="tailwind"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
+            className=" w-14 h-14 p-2 md:p-1 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl md:h-10 md:w-10"
         />
         <img
           src={sassIcon}
           alt="sass"
-            className=" w-14 h-14 p-2 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl"
+            className=" w-14 h-14 p-2 md:p-1 hover:scale-90 transition-transform dark:bg-white  dark:rounded-xl md:h-10 md:w-10"
         />
       </div>
  
