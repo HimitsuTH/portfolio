@@ -23,7 +23,7 @@ const HomePage = () => {
       <div className="z-10 grid place-items-center">
         <div className="flex gap-x-20 px-10 flex-col-reverse lg:flex-row justify-center items-center">
           <div className="  flex flex-col gap-y-10 ">
-            <div className="text-center md:text-start">
+            <div className="text-center  lg:text-start">
               <h1 className="sm:text-4xl text-3xl mb-5 select-none font-bold text-brown2 dark:text-beige">
                 Hi, I am Chinnawich Ampai
               </h1>
@@ -31,7 +31,7 @@ const HomePage = () => {
                 Thai-Nichi institute of technology
               </h2>
             </div>
-            <div className="flex flex-row gap-5 z-10 justify-center items-center md:justify-start md:items-start ">
+            <div className="flex flex-row gap-5 z-10 justify-center items-center lg:justify-start lg:items-start ">
               <a
                 href="https://github.com/HimitsuTH"
                 target="_black"
