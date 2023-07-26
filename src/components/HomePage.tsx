@@ -20,7 +20,7 @@ const HomePage = () => {
 
   return (
     <div className="h-screen place-items-center grid ">
-      <div className="z-10 grid place-items-center p-10">
+      <div className="z-10 grid place-items-center">
         <div className="flex gap-x-20 px-10 flex-col-reverse lg:flex-row justify-center items-center">
           <div className="  flex flex-col gap-y-10 ">
             <div className="text-center  lg:text-start">
@@ -64,7 +64,7 @@ const HomePage = () => {
       </div>
 
       {/* Animation Icon */}
-      <div className=" md:block z-50 hidden">
+      <div className=" md:block z-50 hidden  lg:absolute lg:bottom-0 static">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
