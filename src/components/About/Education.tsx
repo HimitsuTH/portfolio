@@ -2,9 +2,9 @@
 
 const Education = () => {
   return (
-    <div className="hidden md:flex items-center flex-col  transition-all justify-center dark:md:text-brown2">
+    <div className="hidden md:flex items-center flex-col  transition-all justify-center dark:md:text-dk">
       <div className="timeline">
-        <div className="timeline-item bg-white p-4 select-none rounded-xl dark:bg-beige">
+        <div className="timeline-item bg-white p-4 select-none rounded-xl ">
           <span className="  font-bold md:block  ">
             2018 - 2020
           </span>
@@ -16,7 +16,7 @@ const Education = () => {
             voluptatum reprehenderit.
           </p>
         </div>
-        <div className="timeline-item bg-white p-4 select-none rounded-xl dark:bg-beige">
+        <div className="timeline-item bg-white p-4 select-none rounded-xl ">
           <span className="  font-bold md:block  ">2020 - Now</span>
           <h3 className="title">Academy</h3>
           <p className="description font-semibold">Thai-Nichi institute of technology</p>

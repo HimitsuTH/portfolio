@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className=" bg-beige transition-colors dark:bg-brown">
+      <div className=" bg-beige transition-colors dark:bg-dk2">
         <Navbar />
         <GithubIcon />
         <HomePage />

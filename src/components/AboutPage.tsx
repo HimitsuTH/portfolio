@@ -91,17 +91,17 @@ const AboutPage = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      <ul className=" border-b absolute flex-row gap-5 top-10 left-10  hidden min-[920px]:flex z-30 border-brown2 dark:border-beige">
+      <ul className=" border-b absolute flex-row gap-5 top-10 left-10  hidden min-[920px]:flex z-30 border-brown2 dark:border-white">
         <li
           id="tab1"
           onClick={(e) => handleTabActive(e)}
           className="-mb-px mr-1  cursor-pointer list-item"
         >
           <p
-            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2 dark:bg-beige dark:hover:bg-beige2 dark:hover:text-brown2 hover:bg-white dark:border-beige ${
+            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2  dark:hover:bg-blueDark dark:hover:text-white hover:bg-white dark:border-white ${
               tabActive == "tab1"
-                ? " text-white bg-brown2 dark:bg-white dark:text-brown2"
-                : " text-brown2  dark:text-brown2 "
+                ? " text-white bg-brown2 dark:bg-white dark:text-blueDark"
+                : " text-brown2  dark:text-white "
             }`}
           >
             Introduction
@@ -113,10 +113,10 @@ const AboutPage = () => {
           onClick={(e) => handleTabActive(e)}
         >
           <p
-            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2 dark:bg-beige dark:hover:bg-beige2 dark:hover:text-brown2 hover:bg-white dark:border-beige ${
+            className={` inline-block border-l border-t border-r rounded-t py-2 px-4 font-semibold hover:text-slate-800 border-brown2  dark:hover:bg-blueDark dark:hover:text-white hover:bg-white dark:border-white ${
               tabActive == "tab2"
-                ? " text-white bg-brown2 dark:bg-white dark:text-brown2"
-                : " text-brown2  dark:text-brown2 "
+                ? " text-white bg-brown2 dark:bg-white dark:text-blueDark"
+                : " text-brown2  dark:text-white "
             }`}
           >
             Education

@@ -26,86 +26,94 @@ const ProjectPage = () => {
           <h1 className="">Project</h1>
         </div>
         <div className=" grid grid-cols-1 gap-10  min-[720px]:grid-cols-2 xl:grid-flow-col">
-          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none dark:bg-beige dark:text-brown2">
+          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none dark:bg-dk3 dark:text-white dark:border-dk2">
             <CardHeader>
               <CardTitle className=" text-lg">Website</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className=" dark:bg-white flex justify-center items-center p-5 m-2 rounded-full">
               <img src={internetIcon} alt="web" />
             </CardContent>
-            <CardDescription className=" dark:text-brown font-semibold">Responsive Website</CardDescription>
+            <CardDescription className=" dark:text-white font-semibold">
+              Responsive Website
+            </CardDescription>
             <CardFooter className=" flex gap-x-2">
               <a
                 href="https://github.com/HimitsuTH/web_aboutMe"
-                className=" text-sm text-slate-400 hover:text-black dark:text-brown dark:hover:text-brown2"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
                 target="_black"
               >
                 Github
               </a>
               <a
                 href="https://me-tni.netlify.app/"
-                className=" text-sm text-slate-400 hover:text-black dark:text-brown dark:hover:text-brown2"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
                 target="_black"
               >
                 link
               </a>
             </CardFooter>
           </Card>
-          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none dark:bg-beige dark:text-brown2">
+          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none dark:bg-dk3 dark:text-white dark:border-dk2">
             <CardHeader>
               <CardTitle className=" text-lg">RestFulApi</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className=" dark:bg-white flex justify-center items-center p-5 m-2 rounded-full">
               <img src={apiIcon} alt="api" />
             </CardContent>
-            <CardDescription className=" dark:text-brown font-semibold">Headphone Api</CardDescription>
+            <CardDescription className=" dark:text-white font-semibold">
+              Headphone Api
+            </CardDescription>
             <CardFooter className=" flex gap-x-2 ">
               <a
                 href="https://github.com/HimitsuTH/project_restfulApi"
-                className=" text-sm text-slate-400 hover:text-black dark:text-brown dark:hover:text-brown2"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
                 target="_black"
               >
                 Github
               </a>
               <a
                 href="https://project-restful-api.cyclic.app/"
-                className=" text-sm text-slate-400 hover:text-black dark:text-brown dark:hover:text-brown2"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
                 target="_black"
               >
                 link
               </a>
             </CardFooter>
           </Card>
-          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none dark:bg-beige dark:text-brown2">
+          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none dark:bg-dk3 dark:text-white dark:border-dk2">
             <CardHeader>
               <CardTitle className=" text-lg">React Native</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className=" dark:bg-white flex justify-center items-center p-5 m-2 rounded-full">
               <img src={atomIcon} alt="react" />
             </CardContent>
-            <CardDescription className=" dark:text-brown font-semibold">crud app</CardDescription>
+            <CardDescription className=" dark:text-white font-semibold">
+              crud app
+            </CardDescription>
             <CardFooter>
               <a
                 href="https://github.com/HimitsuTH/ReactNativeFinalProject"
-                className=" text-sm text-slate-400 hover:text-black dark:text-brown dark:hover:text-brown2"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
                 target="_black"
               >
                 Github
               </a>
             </CardFooter>
           </Card>
-          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none dark:bg-beige dark:text-brown2">
+          <Card className=" w-64 h-72 p-4 flex justify-center flex-col items-center select-none dark:bg-dk3 dark:text-white dark:border-dk2">
             <CardHeader>
               <CardTitle className=" text-lg">Frontend Mentor</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className=" dark:bg-white flex justify-center items-center p-5 m-2 rounded-full">
               <img src={FrontEndIcon} alt="react" />
             </CardContent>
-            <CardDescription className=" dark:text-brown font-semibold">Frontend Practice</CardDescription>
+            <CardDescription className=" dark:text-white font-semibold">
+              Frontend Practice
+            </CardDescription>
             <CardFooter>
               <a
                 href="https://www.frontendmentor.io/profile/HimitsuTH"
-                className=" text-sm text-slate-400 hover:text-black dark:text-brown dark:hover:text-brown2"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
                 target="_black"
               >
                 Link

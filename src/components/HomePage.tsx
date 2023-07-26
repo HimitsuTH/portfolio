@@ -24,10 +24,10 @@ const HomePage = () => {
         <div className="flex gap-x-20 px-10 flex-col-reverse lg:flex-row justify-center items-center">
           <div className="  flex flex-col gap-y-10 ">
             <div className="text-center  lg:text-start">
-              <h1 className="sm:text-4xl text-3xl mb-5 select-none font-bold text-brown2 dark:text-beige dark:drop-shadow-md">
+              <h1 className="sm:text-4xl text-3xl mb-5 select-none font-bold text-brown2 dark:text-white dark:drop-shadow-md">
                 Hi, I am Chinnawich Ampai
               </h1>
-              <h2 className="sm:text-2xl text-lg text-brown2 dark:text-beige dark:drop-shadow-md">
+              <h2 className="sm:text-2xl text-lg text-brown2 dark:text-white dark:drop-shadow-md">
                 Thai-Nichi institute of technology
               </h2>
             </div>
@@ -57,7 +57,7 @@ const HomePage = () => {
             </div>
             <Skill />
           </div>
-          <div className=" hidden md:flex shape bg-brown2 overflow-hidden dark:bg-beige md:justify-center md:w-96 md:mb-10">
+          <div className=" hidden md:flex shape bg-brown2 overflow-hidden dark:bg-white md:justify-center md:w-96 md:mb-10">
             <img src={ME} alt="me" className=" h-64 w-auto mt-7" />
           </div>
         </div>

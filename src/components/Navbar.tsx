@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="  border-gray-200   z-50 fixed top-5 right-5 bg-transparent md:shadow-2xl rounded-lg md:bg-beige2"
+      className="  border-gray-200   z-50 fixed top-5 right-5 bg-transparent md:shadow-2xl rounded-lg md:bg-beige2 dark:md:bg-blueDark"
       id="topMenu"
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
@@ -44,10 +44,10 @@ const Navbar = () => {
           onClick={() => setToggle((toggle) => !toggle)}
           data-collapse-toggle="navbar-default"
           type="button"
-          className={`inline-flex items-center p-2 w-10 h-10 justify-center text-sm  text-brown2 dark:text-beige rounded-lg md:hidden ${
+          className={`inline-flex items-center p-2 w-10 h-10 justify-center text-sm  text-brown2 dark:text-blueDark rounded-lg md:hidden ${
             toggle
               ? "bg-gray-100 dark:text-brown2"
-              : "hover:bg-gray-100 dark:hover:text-brown2"
+              : "hover:bg-gray-100 dark:hover:text-blueDark"
           } focus:outline-none focus:ring-2 focus:ring-gray-200 focus:text-brown2 `}
           aria-controls="navbar-default"
           aria-expanded="false"
@@ -71,10 +71,10 @@ const Navbar = () => {
             <li id="tab1" onClick={(e) => handleTabActive(e)}>
               <a
                 href="#"
-                className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 border-brown2 ${
+                className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 border-brown2 dark:md:text-dk2 ${
                   tabActive === "tab1"
-                    ? " bg-brown2 text-white dark:bg-beige dark:text-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-black dark:hover:text-brown2"
+                    ? "  text-white dark:bg-blueDark dark:md:bg-white dark:text-white md:text-white bg-brown2 "
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige dark:hover:md:bg-transparent dark:hover:text-brown2 dark:md:hover:text-white"
                 } md:p-0    `}
                 aria-current="page"
               >
@@ -84,11 +84,12 @@ const Navbar = () => {
             <li id="tab2" onClick={(e) => handleTabActive(e)}>
               <a
                 href="#about"
-                className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 border-brown2 ${
+                className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 border-brown2 dark:md:text-dk2 ${
                   tabActive === "tab2"
-                    ? " bg-brown2 text-white dark:bg-beige dark:text-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-black dark:hover:text-brown2"
+                    ? "  text-white dark:bg-blueDark dark:md:bg-white dark:text-white md:text-white bg-brown2 "
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige dark:hover:md:bg-transparent dark:hover:text-brown2 dark:md:hover:text-white"
                 } md:p-0    `}
+         
               >
                 About
               </a>
@@ -96,11 +97,12 @@ const Navbar = () => {
             <li id="tab3" onClick={(e) => handleTabActive(e)}>
               <a
                 href="#project"
-                className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 border-brown2 ${
+                className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 border-brown2 dark:md:text-dk2 ${
                   tabActive === "tab3"
-                    ? " bg-brown2 text-white dark:bg-beige dark:text-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige2 dark:md:text-black dark:hover:text-brown2"
+                    ? "  text-white dark:bg-blueDark dark:md:bg-white dark:text-white md:text-white bg-brown2 "
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige dark:hover:md:bg-transparent dark:hover:text-brown2 dark:md:hover:text-white"
                 } md:p-0    `}
+               
               >
                 Project
               </a>
