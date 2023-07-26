@@ -26,7 +26,7 @@ const GithubIcon = () => {
             </a>
           </TooltipTrigger>
           <TooltipContent>
-            <p>Himitsu</p>
+            <p>Project</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
