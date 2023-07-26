@@ -53,7 +53,7 @@ const AboutPage = () => {
         collapsible
         className="  w-full  min-[920px]:hidden block bg-white p-5 rounded-md z-30 "
       >
-        <AccordionItem value="item-1" className=" dark:text-brown2">
+        <AccordionItem value="item-1" className=" dark:text-black">
           <AccordionTrigger>Introduction</AccordionTrigger>
           <AccordionContent>
             <p className=" w-10/12 ">
@@ -69,7 +69,7 @@ const AboutPage = () => {
             </ul>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-2" className=" dark:text-brown2">
+        <AccordionItem value="item-2" className=" dark:text-black">
           <AccordionTrigger>Education</AccordionTrigger>
           <AccordionContent>
             <ul>
