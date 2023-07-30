@@ -75,17 +75,15 @@ const AboutPage = () => {
             <ul>
               <li className=" font-semibold">- 2018-2020 Tepleela School</li>
               <p className=" ml-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-                excepturi ducimus ab possimus animi totam nesciunt corporis
-                fugiat voluptatum reprehenderit.
+                I studied at the Tepleela School from middle school to high
+                school.
               </p>
               <li className=" font-semibold">
                 - 2020-now Thai-nichi institute of technology
               </li>
               <p className=" ml-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-                excepturi ducimus ab possimus animi totam nesciunt corporis
-                fugiat voluptatum reprehenderit.
+                I wanted to study Japanese so I chose to enter this university.
+                I'm not good at math, so I choose to apply in IT field.
               </p>
             </ul>
           </AccordionContent>
