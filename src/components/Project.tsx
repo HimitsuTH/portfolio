@@ -13,7 +13,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 
-const ProjectPage = () => {
+const Project = () => {
   return (
     <div
       className="top-section md:h-screen place-items-center grid p-10 md:p-0 relative "
@@ -39,14 +39,14 @@ const ProjectPage = () => {
             <CardFooter className=" flex gap-x-2">
               <a
                 href="https://github.com/HimitsuTH/web_aboutMe"
-                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-blueDark"
                 target="_black"
               >
                 Github
               </a>
               <a
                 href="https://me-tni.netlify.app/"
-                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-blueDark"
                 target="_black"
               >
                 link
@@ -66,14 +66,14 @@ const ProjectPage = () => {
             <CardFooter className=" flex gap-x-2 ">
               <a
                 href="https://github.com/HimitsuTH/project_restfulApi"
-                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-blueDark"
                 target="_black"
               >
                 Github
               </a>
               <a
                 href="https://project-restful-api.cyclic.app/"
-                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-blueDark"
                 target="_black"
               >
                 link
@@ -93,7 +93,7 @@ const ProjectPage = () => {
             <CardFooter>
               <a
                 href="https://github.com/HimitsuTH/ReactNativeFinalProject"
-                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-blueDark"
                 target="_black"
               >
                 Github
@@ -113,7 +113,7 @@ const ProjectPage = () => {
             <CardFooter>
               <a
                 href="https://www.frontendmentor.io/profile/HimitsuTH"
-                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-brown"
+                className=" text-sm text-slate-400 hover:text-black dark:text-slate-300 dark:hover:text-blueDark"
                 target="_black"
               >
                 Link
@@ -126,4 +126,4 @@ const ProjectPage = () => {
   );
 };
 
-export default ProjectPage;
+export default Project;

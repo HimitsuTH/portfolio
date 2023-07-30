@@ -1,9 +1,10 @@
 import GithubIcon from "./components/GithubIcon";
 import Navbar from "./components/Navbar";
 
-import HomePage from "./components/HomePage";
-import AboutPage from "./components/AboutPage";
-import ProjectPage from "./components/ProjectPage";
+import Home from "./components/Home";
+import About from "./components/About";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
 
 import "./App.css";
 
@@ -13,9 +14,10 @@ function App() {
       <div className=" bg-beige transition-colors dark:bg-dk2">
         <Navbar />
         <GithubIcon />
-        <HomePage />
-        <AboutPage />
-        <ProjectPage />
+        <Home />
+        <About />
+        <Project />
+        <Contact/>
       </div>
     </>
   );

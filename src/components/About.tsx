@@ -12,7 +12,7 @@ import {
 
 import { Progress } from "@/components/ui/progress";
 
-const AboutPage = () => {
+const About = () => {
   const [tabActive, setTabActive] = useState<string>("tab1");
   const [loading, setLoading] = useState<boolean>(true);
   const [progress, setProgress] = React.useState(13);
@@ -133,4 +133,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;

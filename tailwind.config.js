@@ -24,6 +24,7 @@ module.exports = {
         dk:"#282b30",
         dk2:"#36393e",
         dk3:"#424549",
+        dk4:"#1e2124",
         blueDark:"	#7289da",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

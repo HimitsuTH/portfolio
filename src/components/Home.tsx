@@ -15,7 +15,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-const HomePage = () => {
+const Home = () => {
   const lottieRef = React.useRef<LottieRefCurrentProps>(null);
 
   return (
@@ -86,4 +86,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;
