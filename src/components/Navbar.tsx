@@ -50,7 +50,7 @@ const Navbar = () => {
             toggle
               ? "bg-gray-100 dark:text-brown2"
               : "hover:bg-gray-100 dark:hover:text-blueDark"
-          } focus:outline-none focus:ring-2 focus:ring-gray-200 focus:text-brown2 `}
+          } focus:outline-none focus:ring-2 focus:ring-gray-200 focus:text-brown2 dark:focus:text-blueDark`}
           aria-controls="navbar-default"
           aria-expanded="false"
         >
