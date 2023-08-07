@@ -48,7 +48,7 @@ const Navbar = () => {
           type="button"
           className={`inline-flex items-center p-2 w-10 h-10 justify-center text-sm  text-brown2 dark:text-blueDark rounded-lg md:hidden ${
             toggle
-              ? "bg-gray-100 dark:text-brown2"
+              ? "bg-gray-100 dark:text-blueDark"
               : "hover:bg-gray-100 dark:hover:text-blueDark"
           } focus:outline-none focus:ring-2 focus:ring-gray-200 focus:text-brown2 dark:focus:text-blueDark`}
           aria-controls="navbar-default"
