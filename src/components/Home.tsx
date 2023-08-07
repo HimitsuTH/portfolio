@@ -19,7 +19,7 @@ const Home = () => {
   const lottieRef = React.useRef<LottieRefCurrentProps>(null);
 
   return (
-    <div className="h-screen place-items-center grid ">
+    <div className="h-screen place-items-center grid section">
       <div className="z-10 grid place-items-center">
         <div className="flex gap-x-20 px-10 flex-col-reverse lg:flex-row justify-center items-center">
           <div className="  flex flex-col gap-y-10 ">

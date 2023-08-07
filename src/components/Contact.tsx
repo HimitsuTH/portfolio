@@ -2,7 +2,7 @@
 
 const Contact = () => {
   return (
-    <div className=" place-items-center grid overflow-hidden bg-white dark:bg-dk4">
+    <div className=" place-items-center grid overflow-hidden bg-white dark:bg-dk4 section">
       <div className=" m-5">
         <div className="flex justify-center items-center">
           <h1 className=" select-none">Email</h1>

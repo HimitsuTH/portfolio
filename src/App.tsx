@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import "./App.css";
 
 function App() {
+  
   return (
     <>
       <div className=" bg-beige transition-colors dark:bg-dk2">
@@ -17,7 +18,7 @@ function App() {
         <Home />
         <About />
         <Project />
-        <Contact/>
+        <Contact />
       </div>
     </>
   );

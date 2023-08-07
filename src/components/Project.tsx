@@ -16,7 +16,7 @@ import {
 const Project = () => {
   return (
     <div
-      className="top-section md:h-screen place-items-center grid p-10 md:p-0 relative "
+      className="top-section md:h-screen place-items-center grid p-10 md:p-0 relative section "
       id="project"
     >
       {/* <div className="bgImage h-screen"></div> */}

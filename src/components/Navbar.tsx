@@ -9,6 +9,7 @@ const Navbar = () => {
     setTabActive(e.currentTarget.id);
   };
 
+  //fc Dark mode
   const [theme, setTheme] = useState<string>(
     String(localStorage.getItem("theme")) || "light"
   );
@@ -32,12 +33,13 @@ const Navbar = () => {
   };
   localStorage.setItem("theme", theme);
 
+
   // console.log(tabActive);
 
   return (
     <nav
       className="  border-gray-200   z-50 fixed top-5 right-5 bg-transparent md:shadow-2xl rounded-lg md:bg-beige2 dark:md:bg-blueDark"
-      id="topMenu"
+      id="nav"
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
         <button
@@ -74,7 +76,7 @@ const Navbar = () => {
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 border-brown2 dark:md:text-dk2 ${
                   tabActive === "tab1"
                     ? "  text-white dark:bg-blueDark dark:md:bg-white dark:text-white md:text-white bg-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige dark:hover:md:bg-transparent dark:hover:text-brown2 dark:md:hover:text-white"
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige dark:hover:md:bg-transparent dark:hover:text-blueDark dark:md:hover:text-white"
                 } md:p-0    `}
                 aria-current="page"
               >
@@ -87,9 +89,8 @@ const Navbar = () => {
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 border-brown2 dark:md:text-dk2 ${
                   tabActive === "tab2"
                     ? "  text-white dark:bg-blueDark dark:md:bg-white dark:text-white md:text-white bg-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige dark:hover:md:bg-transparent dark:hover:text-brown2 dark:md:hover:text-white"
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige dark:hover:md:bg-transparent dark:hover:text-blueDark dark:md:hover:text-white"
                 } md:p-0    `}
-         
               >
                 About
               </a>
@@ -100,9 +101,8 @@ const Navbar = () => {
                 className={`block py-2 pl-3 pr-4  rounded   md:border-0  md:p-2 mt-2 border-brown2 dark:md:text-dk2 ${
                   tabActive === "tab3"
                     ? "  text-white dark:bg-blueDark dark:md:bg-white dark:text-white md:text-white bg-brown2 "
-                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige dark:hover:md:bg-transparent dark:hover:text-brown2 dark:md:hover:text-white"
+                    : "text-gray-900  hover:bg-gray-100 md:hover:text-brown2 hover:text-brown2 md:hover:bg-beige dark:hover:md:bg-transparent dark:hover:text-blueDark dark:md:hover:text-white"
                 } md:p-0    `}
-               
               >
                 Project
               </a>

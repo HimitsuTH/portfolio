@@ -45,7 +45,7 @@ const About = () => {
 
   return (
     <div
-      className="h-screen  p-10 grid place-items-center relative  "
+      className="h-screen  p-10 grid place-items-center relative  section"
       id="about"
     >
       <Accordion
